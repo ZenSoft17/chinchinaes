@@ -1,0 +1,132 @@
+/* styles for home footer  */
+
+.footer-home {
+  width: 100%;
+  height: auto;
+  background: var(--negro-mate) url("../../../img/brain-bg.png") no-repeat;
+  background-position: right bottom;
+  background-size: 40vh;
+}
+
+.container-links {
+  width: 100%;
+  margin: 10vh 0 0 0;
+  display: flex;
+}
+
+.list-footer,
+.list-networks {
+  list-style: none;
+}
+
+.list-footer {
+  width: 30%;
+  text-align: center;
+}
+
+.item-footer-title {
+  font-size: 3.4vh;
+  color: var(--blanco);
+}
+
+.item-footer {
+  margin: 0.5vh 0 0.5vh 0;
+  font-size: 2.5vh;
+  color: var(--gris);
+}
+
+.list-networks {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-network {
+  width: 8vh;
+  height: 8vh;
+  padding: 1vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-nework-png {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.container-by {
+  width: 100%;
+  margin: 10vh 0 10vh 0;
+}
+
+.by {
+  width: 100%;
+  margin: 2vh 0 2vh 0;
+  display: flex;
+  align-items: center;
+}
+
+.by-png {
+  width: 8vh;
+  margin: 0 0 0 5vh;
+}
+
+.by-text {
+  color: var(--blanco);
+  text-align: 3vh;
+}
+
+.text-footer {
+  color: var(--gris);
+  margin: 0 0 0 10vh;
+}
+
+/* event */
+.item-footer:active {
+  transform: scale(1.1);
+}
+@media screen and (hover: hover) {
+  .item-footer:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* responsive  */
+@media screen and (max-width: 800px) {
+  .item-footer-title {
+    font-size: 2.9vh;
+  }
+
+  .item-footer {
+    font-size: 2.2vh;
+  }
+  .item-network {
+    width: 6vh;
+    height: 6vh;
+    padding: 0.5vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-links {
+    display: block;
+  }
+  .list-footer {
+    width: 100%;
+    margin: 5vh 0 5vh 0;
+    text-align: center;
+  }
+  .list-networks {
+    width: 100%;
+  }
+  .by-text {
+    font-size: 2.5vh;
+  }
+  .footer-home {
+    background-size: 30vh;
+  }
+}

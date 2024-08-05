@@ -7,12 +7,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "kanit";
+  src: url("../fonts/Kanit-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   transition: 0.1s all ease-in;
+  scrollbar-width: thin;
+  scrollbar-color: #0f0077 #fff;
+}
+
+#app{
+  width: 100%;
 }
 
 a {
@@ -52,14 +65,17 @@ textarea {
   --shadow-rosa: rgba(255, 43, 222, 0.25);
   --shadow: rgba(0, 0, 0, 0.25);
 
-  --shadow-azul-oscuro-50: rgba(15, 0, 119, 0.50);
-  --shadow-50: rgba(0, 0, 0, 0.50);
-  --shadow-amarillo-50: rgba(255, 255, 0, 0.50);
-  --shadow-naranja-50: rgba(255, 89, 0, 0.50);
-  --shadow-blanco-50: rgba(255, 255, 255, 0.50);
-  --shadow-gris-50: rgba(122, 116, 113, 0.50);
-  --shadow-morado-50: rgba(191, 62, 255, 0.50);
-  --shadow-rosa-50: rgba(255, 43, 222, 0.50);
+  --shadow-azul-oscuro-50: rgba(15, 0, 119, 0.5);
+  --shadow-50: rgba(0, 0, 0, 0.5);
+  --shadow-amarillo-50: rgba(255, 255, 0, 0.5);
+  --shadow-naranja-50: rgba(255, 89, 0, 0.5);
+  --shadow-blanco-50: rgba(255, 255, 255, 0.5);
+  --shadow-gris-50: rgba(122, 116, 113, 0.5);
+  --shadow-morado-50: rgba(191, 62, 255, 0.5);
+  --shadow-rosa-50: rgba(255, 43, 222, 0.5);
+
+
+  --shadow-light-blue : rgba(0, 85, 255) ;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -11,7 +11,7 @@ import "../../assets/styles/dfc/dfc.css";
 const DFC = () => {
   return (
     <div>
-      <h1></h1>
+      <h1>dfc</h1>
     </div>
   );
 };

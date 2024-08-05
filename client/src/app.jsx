@@ -9,6 +9,7 @@ import {
   Home,
   Global_Context,
 } from "./imports";
+import "./assets/styles/global.css";
 
 const App = () => {
   return (
