@@ -1,5 +1,5 @@
-import {} from "../../../imports";
-import "../../../assets/styles/revista/components/profile.css";
+import {} from "../../imports";
+import "../../../../assets/styles/revista/components/profile.css";
 
 const Profile = () => {
 

@@ -24,7 +24,7 @@
   scrollbar-color: #0f0077 #fff;
 }
 
-#app{
+#app {
   width: 100%;
 }
 
@@ -74,8 +74,14 @@ textarea {
   --shadow-morado-50: rgba(191, 62, 255, 0.5);
   --shadow-rosa-50: rgba(255, 43, 222, 0.5);
 
+  --gradiant-bg: rgb(6, 0, 50) ;
+  --gradiant-linear: linear-gradient(
+    189deg,
+    rgba(6, 0, 50, 1) 0%,
+    rgba(0, 0, 0, 0.8409488795518207) 100%
+  );
 
-  --shadow-light-blue : rgba(0, 85, 255) ;
+  --shadow-light-blue: rgba(0, 85, 255);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -2,22 +2,16 @@
 
 .container-home {
   width: 100%;
-  height: 100vh;
-  overflow-y: auto;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(6, 0, 50);
-  background: linear-gradient(
-    189deg,
-    rgba(6, 0, 50, 1) 0%,
-    rgba(0, 0, 0, 0.8409488795518207) 100%
-  );
+  background: var(--gradiant-bg);
+  background: var(--gradiant-linear);
   z-index: 999;
 }
 
-.container-video-bg {
+.container-video-bg-home {
   position: absolute;
   top: -60vh;
   width: 120vh;
@@ -27,8 +21,8 @@
   z-index: 0;
 }
 
-.container-video-bg::before,
-.container-video-bg::after {
+.container-video-bg-home::before,
+.container-video-bg-home::after {
   content: "";
   position: absolute;
   top: 0;
@@ -39,27 +33,27 @@
   transition: opacity 0.3s ease;
 }
 
-.container-video-bg::before {
+.container-video-bg-home::before {
   background: var(--shadow);
   opacity: 0;
   z-index: 1;
 }
 
-.container-video-bg::after {
+.container-video-bg-home::after {
   background: var(--shadow);
   opacity: 0;
   z-index: 2;
 }
 
-.container-video-bg:hover::before {
+.container-video-bg-home:hover::before {
   opacity: 1;
 }
 
-.container-video-bg:hover::after {
+.container-video-bg-home:hover::after {
   opacity: 0;
 }
 
-.bg-video {
+.bg-video-home {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -67,8 +61,8 @@
   opacity: 0.25;
 }
 
-.container-video-bg,
-.bg-video {
+.container-video-bg-home,
+.bg-video-home {
   filter: drop-shadow(2em 2em 4em var(--shadow-light-blue));
   box-shadow: inset 2em 2em 4em var(--shadow-light-blue);
 }
@@ -76,7 +70,7 @@
 .title-home,
 .span-home,
 .text-home {
-  z-index: 99;
+  z-index: 9;
 }
 
 .title-home {
@@ -102,7 +96,7 @@
   color: var(--gris);
 }
 
-.container-card {
+.container-card-home {
   width: 100%;
   margin: 15vh 0 10vh 0;
   height: auto;
@@ -111,7 +105,7 @@
   align-items: center;
 }
 
-.card {
+.card-home {
   width: 40%;
   height: 80vh;
   padding: 1em;
@@ -124,16 +118,16 @@
   position: relative;
 }
 
-.card:nth-child(1) {
+.card-home:nth-child(1) {
   box-shadow: -0.5em 0.5em 2em var(--shadow-naranja-50);
 }
 
-.card:nth-child(2) {
+.card-home:nth-child(2) {
   box-shadow: 0.5em 0.5em 2em var(--shadow-azul-oscuro-50);
 }
 
-.container-card-1,
-.container-card-2 {
+.container-card-1-home,
+.container-card-2-home {
   width: 15vh;
   height: 15vh;
   border: 2px solid var(--shadow-rosa);
@@ -145,22 +139,22 @@
   top: 10vh;
 }
 
-.container-card-1 {
+.container-card-1-home {
   border-radius: 0.5em;
   box-shadow: -1em 1em 5em var(--shadow-azul-oscuro-50);
 }
 
-.container-card-2 {
+.container-card-2-home {
   border-radius: 50%;
   box-shadow: -1em 1em 5em var(--shadow-naranja-50);
 }
 
-.card-png {
+.card-png-home {
   width: 80%;
   height: 80%;
 }
 
-.container-text {
+.container-text-home {
   width: 100%;
   height: 55%;
   padding: 1em;
@@ -169,27 +163,27 @@
   bottom: 0;
 }
 
-.title-card {
+.title-card-home {
   font-size: 6vh;
   color: var(--blanco);
 }
 
-.text-card {
+.text-card-home {
   margin: 5vh 0 0 0;
   color: var(--gris);
   font-size: 2.5vh;
 }
 
-.container-partner {
+.container-partner-home {
   width: 100%;
-  margin: 5vh 0 5vh 0;
+  margin: 5vh 0 15vh 0;
   padding: 1em;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.partner-png {
+.partner-png-home {
   width: 15vh;
 }
 
@@ -215,29 +209,29 @@
     font-size: 9vh;
   }
 
-  .container-card {
+  .container-card-home {
     margin: 10vh 0 8vh 0;
     flex-direction: column;
     align-items: center;
   }
 
-  .card {
+  .card-home {
     width: 80%;
     margin: 4vh 0 4vh 0;
     padding: 0.5em;
   }
 
-  .title-card {
+  .title-card-home {
     font-size: 4vh;
   }
 
-  .text-card {
+  .text-card-home {
     font-size: 2.2vh;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .container-video-bg {
+  .container-video-bg-home {
     top: -45vh;
     width: 90vh;
     height: 90vh;
@@ -253,7 +247,7 @@
 }
 
 @media screen and (max-width: 540px) {
-  .container-video-bg {
+  .container-video-bg-home {
     top: -35vh;
     width: 70vh;
     height: 70vh;
@@ -275,7 +269,7 @@
     font-size: 2.2vh;
   }
 
-  .container-partner {
+  .container-partner-home {
     padding: 2em;
     overflow-x: auto;
     overflow-y: hidden;
@@ -283,7 +277,7 @@
 }
 
 @media screen and (max-width: 350px) {
-  .container-video-bg {
+  .container-video-bg-home {
     top: -25vh;
     width: 50vh;
     height: 50vh;

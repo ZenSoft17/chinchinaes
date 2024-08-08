@@ -1,0 +1,219 @@
+/* Publications Revista */
+.section-publications-revista {
+  width: 100%;
+}
+
+.container-publications-revista {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+.item-publications-revista {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.item-1-publications-revista {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.item-2-publications-revista {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.item-3-publications-revista {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.item-4-publications-revista {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.item-5-publications-revista {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.item-6-publications-revista {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.item-7-publications-revista {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.item-8-publications-revista {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.item-9-publications-revista {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.imagen-publications-revista {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.title-publications-revista,
+.text-publications-revista {
+  z-index: 1;
+}
+
+.title-publications-revista {
+  font-size: 3vh;
+  font-weight: 500;
+  color: var(--blanco);
+}
+
+.text-publications-revista {
+  font-size: 2vh;
+  color: var(--blanco);
+}
+
+.container-controls-publications-revista {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.control-publications-revista {
+  width: 10vh;
+  height: 10vh;
+  padding: 1vh;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.image-control-publications-revista {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.counter-publications-revista {
+  font-size: 3vh;
+  font-weight: 600;
+  color: var(--blanco);
+}
+
+/* responsive  */
+
+@media (max-width: 800px) {
+  .container-publications-revista {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .item-1-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .item-2-publications-revista {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .item-3-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .item-4-publications-revista {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .item-5-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .item-6-publications-revista {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .item-7-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  .item-8-publications-revista {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .item-9-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title-publications-revista {
+    font-size: 2.5vh;
+  }
+
+  .text-publications-revista {
+    font-size: 1.9vh;
+  }
+
+  .container-publications-revista {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+  }
+
+  .item-1-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .item-2-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .item-3-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .item-4-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  .item-5-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  .item-6-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  .item-7-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+  .item-8-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+  .item-9-publications-revista {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+  }
+}

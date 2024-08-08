@@ -1,0 +1,128 @@
+/* styles publication revista  */
+
+.container-publication-revista,
+.container-title-revista,
+.image-png-publication-revista {
+  width: 100%;
+}
+
+.container-publication-revista,
+.container-title-revista,
+.container-content-publication-revista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-title-revista {
+  height: 80vh;
+  position: relative;
+  justify-content: center;
+}
+
+.image-png-publication-revista {
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  position: absolute;
+  z-index: 0;
+}
+
+.title-publication-revista,
+.hr-publication-revista,
+.text-publication-revista {
+  z-index: 1;
+}
+
+.title-publication-revista {
+  font-size: 8vh;
+  color: var(--blanco);
+}
+
+.hr-publication-revista {
+  width: 30vw;
+  margin: 2vh 0 2vh 0;
+  height: 2vh;
+  border: none;
+  background: var(--rosa);
+}
+
+.text-publication-revista {
+  font-size: 2.5vh;
+  color: var(--blanco);
+}
+
+.container-content-publication-revista {
+  width: 60%;
+}
+
+.sub-image-publication-revista,
+.video-publication-revista,
+.sub-title-publication-revista,
+.bold-text-publication-revista,
+.sub-text-publication-revista,
+.sub-hr-publication-revista {
+  margin: 2vh 0 2vh 0;
+}
+
+.sub-title-publication-revista {
+  font-size: 5vh;
+}
+
+.bold-text-publication-revista {
+  font-size: 3vh;
+  font-weight: 900;
+}
+
+.sub-text-publication-revista {
+  font-size: 2.5vh;
+}
+
+.sub-hr-publication-revista {
+  width: 100%;
+  height: 1vh;
+  border: none;
+  background: var(--blanco);
+}
+
+.sub-image-publication-revista,
+.video-publication-revista {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .container-content-publication-revista {
+    width: 80%;
+  }
+  .title-publication-revista {
+    font-size: 5vh;
+  }
+
+  .text-publication-revista {
+    font-size: 2.2vh;
+  }
+
+  .sub-title-publication-revista {
+    font-size: 4vh;
+  }
+
+  .bold-text-publication-revista {
+    font-size: 2.5vh;
+  }
+
+  .sub-text-publication-revista {
+    font-size: 2.2vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-content-publication-revista {
+    width: 95%;
+  }
+
+  .title-publication-revista {
+    font-size: 4vh;
+  }
+}

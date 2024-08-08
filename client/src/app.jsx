@@ -17,8 +17,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/revista" element={<Revista />} />
-          <Route path="/feria-de-la-cultura-digital" element={<DFC />} />
+          <Route path="/revista/*" element={<Revista />} />
+          <Route path="/feria-de-la-cultura-digital/*" element={<DFC />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<Lost />} />
         </Routes>
